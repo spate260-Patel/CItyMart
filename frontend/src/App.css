@@ -1,0 +1,218 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef2f5;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 30px 15px;
+}
+
+/* Typography */
+.main-heading {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: normal;
+}
+
+.sub-heading {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* Alert Box */
+.message-box {
+  background: #d4edda;
+  color: #155724;
+  padding: 15px 20px;
+  border-left: 5px solid #28a745;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Cards & Layout */
+.card {
+  background: white;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #34495e;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 12px;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+/* Forms Layout (Side by side) */
+.forms-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.form-card {
+  flex: 1;
+  margin-bottom: 0; /* Remove bottom margin inside flex */
+}
+
+ 
+.place-order-card {
+  background: #f8fbff; 
+  border: 1px solid #cce0ff;
+}
+
+.place-order-card h2 {
+  color: #0056b3;
+  border-bottom-color: #cce0ff;
+}
+
+.create-review-card {
+  background: #fdfaf0;  
+  border: 1px solid #fce2a6;
+}
+
+.create-review-card h2 {
+  color: #b37400;
+  border-bottom-color: #fce2a6;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #34495e;
+  font-size: 0.9rem;
+}
+
+input, select, textarea {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: white;
+  color: #000000;
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  background-color: #34495e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #2c3e50;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Specific button colors for forms to match boxes */
+.place-order-card button.action-btn {
+  background-color: #007bff;
+  width: 100%;
+}
+.place-order-card button.action-btn:hover {
+  background-color: #0069d9;
+}
+
+.create-review-card button.action-btn {
+  background-color: #ffaa00;
+  color: #fff;
+  width: 100%;
+}
+.create-review-card button.action-btn:hover {
+  background-color: #e69900;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+th, td {
+  border-bottom: 1px solid #dee2e6;
+  padding: 14px 16px;
+  text-align: left;
+}
+
+th {
+  background: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:nth-child(even) {
+  background-color: #f8fbff; /* Slight blue tint to match modern feel */
+}
+
+tr:hover {
+  background-color: #f1f3f5;
+}
+
+/* Responsive grid for smaller screens */
+@media (max-width: 900px) {
+  .forms-container {
+    flex-direction: column;
+  }
+}
